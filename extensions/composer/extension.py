@@ -314,9 +314,6 @@ class ComposerExtension(ExtensionHelper):
         # install dependencies w/Composer
         self.composer_runner.run('install', '--no-progress',
                                  *self._ctx['COMPOSER_INSTALL_OPTIONS'])
-	
-	# globally install composer asset plugin
-	self.composer_runner.run('global require', '"fxp/composer-asset-plugin:~1.0"')
 
 
 class ComposerCommandRunner(object):
